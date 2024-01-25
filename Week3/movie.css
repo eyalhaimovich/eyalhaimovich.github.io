@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee');
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+html, body{
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+.title-section{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.title{
+    font-family: Bungee;
+    margin-left: 1em;
+    text-align: center;
+    font-size: 50px;
+    background-image: linear-gradient(to left, green, rgb(113, 37, 168), rgb(25, 152, 163), rgb(116, 13, 13));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.main-title{
+    height: 500px;
+    width: 500px;
+    background-color: #FF6666;
+}
+
+.mainpicture{
+    height: 500px;
+    width: 500px;
+    margin-right: 1em;
+}
+
+figcaption{
+    text-align: center;
+    word-spacing: 1em;
+}
+
+.main-header{
+    padding-bottom: 1px;
+}
+
+.content-section{
+    margin: 1em;
+}
+
+.info-title{
+    background-image: linear-gradient(to right, rgb(168, 86, 240), rgb(13, 37, 168), rgb(25, 152, 163), rgb(200, 161, 203));
+}
+
+.info{
+    margin-left: 3em;
+    white-space:pre-line;
+    line-height: 2;
+}
+
+.reviews{
+    font-family: Raleway;
+    font-size: 16px;
+    margin-left: 3em;
+    margin-right: 3em;
+    white-space:pre-line;
+}
+
+.reviews-title{
+    background-image: linear-gradient(to 250deg, rgb(24, 29, 100), rgb(28, 17, 35), rgb(101, 21, 90), rgb(112, 143, 30));
+}
+
+.noMovie{
+    text-align: center;
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    padding: .8em;
+    display: inline-block;
+    color: darksalmon;
+}
+
+.nav a:hover{
+    background-color: rgb(96, 85, 90);
+}
+
+.main-nav{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1em;
+    font-weight: lighter;
+    margin-right: 2em;
+}
+
+.main-nav li{
+    padding: 0 3%;
+}

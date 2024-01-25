@@ -1,0 +1,2 @@
+php -S localhost:4000
+//open php server at localhost:4000/folder/file.php at current directory

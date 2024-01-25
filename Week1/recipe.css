@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Ultra');
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html, body{
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    color: white;
+    background-color: black;
+}
+
+.title{
+    font-family: Ultra;
+    color: palevioletred;
+    margin: 0;
+}
+
+.main-header{
+    background-image: url("title_bg.jpg");
+    background-size: cover;
+    padding-bottom: 2px;
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    padding: .8em;
+    display: inline-block;
+    color: darksalmon;
+}
+
+.nav a:hover{
+    background-color: rgb(96, 85, 90);
+}
+
+.main-nav{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.main-nav li{
+    padding: 0 3%;
+}
+
+figcaption{
+    color: rgb(193, 185, 185);
+}
+
+.pie-line{
+    background-image: url("pumpkin-gd457ef8a3_1280.png");
+    background-size: contain;
+}
+
+button{
+    text-decoration: none;
+    background-color: white;
+    color: blue;
+    font-size: large;
+}
+
+.content-section{
+    margin: auto;
+    max-width: 900px;
+    padding: 0 1em;
+}
+
+.pie-image{
+    margin: .2em;
+    border-radius: 40%;
+}

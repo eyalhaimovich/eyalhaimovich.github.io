@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+    margin: 0;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    background-image: url(https://media.istockphoto.com/id/1167895713/photo/abstract-galaxy-watercolor-backgrounds.jpg?b=1&s=170667a&w=0&k=20&c=ivNkiy9Bq_CMEAEoGrDNQuilHll53fhAn-BKTgB9dqU=);
+    background-size: 100% 100%;
+}
+
+.nav_container{
+    text-align: center;
+}
+
+#logo{
+    font-family: "Metal Mania";
+    color: #d9fffa;
+    display: flex;
+    text-decoration: none;
+    font-size: 5em;
+}
+
+/* main */
+.main_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 2em 0 3em;
+}
+
+.items_title{
+    /* change font to look good */
+    text-align: center;
+}
+
+/* items */
+.item{
+    margin-bottom: 30px;
+}
+
+.item_img{
+    width: 28vw;
+    height: 28vw;
+    border: 4px solid black;
+}
+
+.item_info{
+    margin: 0;
+    padding-left: 1em;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* add button */
+.buy_button{
+    float: right;
+    padding: 2%;
+    margin-right: 3%;
+    background: rgb(0, 105, 151);
+    border-radius: 7%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+}
+
+.purchase_button{
+    position: absolute;
+    bottom: 1%;
+    right: 15%;
+    padding: 2%;
+    background: rgb(0, 140, 201);
+    border-radius: 7%;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bolder;
+    border: none;
+}
+
+/* button hover */
+.buy_button:hover{
+    color: white;
+    background: rgb(50, 0, 0);
+    transition: all .5s ease-out;
+}
+
+/* cart button */
+.cart_button button{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 3%;
+    right: 3%;
+    border: 3px solid black;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.cart_button img{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 3%;
+    right: 3%;
+    border: 3px solid black;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.cart_button .cart_counter{
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 2.5%;
+    right: 2.5%;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: large;
+    color: navy;
+    z-index: 3;
+    cursor: default;
+}
+
+/* Cart layout */
+.cart_container{
+    padding: 1%;
+    padding-top: 0;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 30%;
+    height: 90%;
+    background-color: #ccc;
+    border: 5px solid yellow;
+    border-radius: 2%;
+    transition: transform .5s ease;
+    z-index: 1;
+}
+
+.hide_cart{
+    position: fixed;
+    transform: translate(55%, 30%) scale(0.01);
+    transition: transform .4s ease;
+    width: 300px;
+    height: 300px;
+    top: 72%;
+    right: 5%;
+    z-index: 0;
+}
+
+.cart_container h1{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.cart_header{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.cart_header .col1{
+    margin-left: 3%;
+    width: 33%;
+}
+
+.cart_header .col2{
+    width: 33%;
+}
+
+.cart_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.cart_item .item_img{
+    width: 5vw;
+    height: 4vw;
+    border: 2px solid black;
+    border-radius: 30%;
+}
+
+.cart_item .item_name{
+    width: 25%;
+}
+
+.item_count{
+    width: 12%;
+    border-radius: 30%;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 3%;
+}
+
+/* remove button */
+.remove_button{
+    width: 20%;
+    padding: 2%;
+    background: rgb(210, 1, 18);
+    border-radius: 7%;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bolder;
+    border: none;
+}
+
+/* total bottom of cart container */
+.total{
+    position: absolute;
+    bottom: 1%;
+}
+
+.total_header{
+    position: absolute;
+    bottom: 5%;
+}
