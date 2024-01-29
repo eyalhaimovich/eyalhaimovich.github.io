@@ -45,14 +45,26 @@ $(document).ready(function(){
 		$('li.smooth-menu a').bind("click", function(event) {
 			event.preventDefault();
 			var anchor = $(this);
+
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 0
+				scrollTop: $(anchor.attr('href')).offset().top - 70
 			}, 1200,'easeInOutExpo');
 		});
 		
 		$('body').scrollspy({
 			target:'.navbar-collapse',
-			offset:0
+			offset:100,
+			activate: false
+		});
+
+		$('nav.navbar.bootsnav ul.nav > li > a').on('focus', function() {
+			var $element = $(this);
+		
+			// Set a timer to trigger blur after 500 milliseconds (half a second)
+			//removes focus from navbar
+			setTimeout(function() {
+				$element.blur();
+			}, 1000);
 		});
 
 	// 3. Progress-bar

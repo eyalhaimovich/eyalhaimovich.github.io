@@ -549,6 +549,7 @@
                         scrollTop: $position
                     }, $speed);
                 });
+
                 
                 // Activate Navigation
                 var fixSpy = function() {
